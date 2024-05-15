@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PomodoroTimer</title>
+
+    <!-- Importing the css and icons -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+</head>
+
+<body>
+   
+    <section>
+        <!-- Heading and Logo -->
+        <header>
+            <h1>Pomodoro <span>T</span>imer</h1>
+        </header>
+
+        <!-- Timer -->
+        <div class="container">
+            <div class="blurCircle-1"></div>
+            <div class="blurCircle-2"></div>
+            <div class="timer-container">
+                <div id="timer">25:00</div>
+                <div id="mode"></div>
+            </div>
+            <div class="button-container">
+                <div class="button-group">
+                    <button id="start-btn"><i class='bx bx-play'></i></button>
+                    <button id="pause-btn"><i class='bx bx-pause'></i></button>
+                    <button id="reset-btn"><i class='bx bx-reset'></i></button>
+                </div>
+                <button id="switch-mode-btn">Switch Mode</button>
+                <button id="short-break-btn" class="hidden">Short Break</button>
+                <button id="long-break-btn" class="hidden">Long Break</button>
+            </div>
+        </div>
+    </section>
+    <!-- imporing the javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
