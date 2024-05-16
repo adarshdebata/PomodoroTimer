@@ -9,6 +9,8 @@ The Pomodoro Timer is a productivity tool that helps you manage your time effect
 - Start, pause, and reset timer functionality
 - Visual indication of current mode (Pomodoro or Break)
 - Responsive design for seamless use across devices
+- Notification sound when timer reaches the last 3 seconds
+- Browser tab title updated with the remaining time
 
 ## How to Use
 1. Clone the repository to your local machine.
