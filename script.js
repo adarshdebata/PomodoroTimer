@@ -1,10 +1,23 @@
-// script.js
 let timerInterval;
 let timeLeft = 25 * 60; // Initial time in seconds (25 minutes)
 let isRunning = false;
 let pausedTime = 0;
 let isPomodoroMode = true; // Initially in pomodoro mode
 let breakDuration = 5 * 60; // Default break duration in seconds (5 minutes)
+
+// Function to play notification sound
+function playNotificationSound() {
+    const audio = new Audio('assets/notification.mp3'); 
+    audio.play();
+}
+
+// Function to update browser tab title with remaining time
+function updateTitle() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    const remainingTime = `${padZero(minutes)}:${padZero(seconds)}`;
+    document.title = `${remainingTime} - Pomodoro Timer`;
+}
 
 function startTimer(duration) {
     if (!isRunning) {
@@ -35,13 +48,21 @@ function updateTimer() {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
     document.getElementById('timer').innerText = `${padZero(minutes)}:${padZero(seconds)}`;
-    timeLeft--;
-    if (timeLeft < 0) {
+    updateTitle(); // Update browser tab title with remaining time
+
+    if (timeLeft <= 3 && timeLeft > 0) {
+        playNotificationSound(); // Play notification sound when timer reaches last 3 seconds
+    }
+
+    if (timeLeft === 0) {
         clearInterval(timerInterval);
         alert(isPomodoroMode ? 'Pomodoro Timer Completed!' : 'Break Timer Completed!');
         isRunning = false;
     }
+
+    timeLeft--;
 }
+
 
 function switchMode() {
     isPomodoroMode = !isPomodoroMode;
