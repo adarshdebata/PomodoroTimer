@@ -156,3 +156,216 @@ section {
 .hidden {
   display: none;
 }
+
+/* Responsive Styles for devices with max-width 1024px */
+@media (max-width: 1024px) {
+   /* Adjust font sizes */
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  section {
+    padding: 6rem;
+  }
+
+  .container {
+    width: 70%;
+    padding: 1.5rem;
+    border-radius: 3rem;
+  }
+
+  .timer-container {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  #timer {
+    font-size: 6rem;
+  }
+
+  #mode {
+    font-size: 1.6rem;
+  }
+
+  .button-container button {
+    font-size: 1.1rem;
+  }
+
+  .button-container i {
+    font-size: 2.8rem;
+  }
+}
+
+/* Responsive Styles for devices with max-width 768px */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  section {
+    padding: 5rem 1rem;
+  }
+  .blurCircle-1,.blurCircle-2{
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .container {
+    width: 70%;
+    top: 50%;
+    padding: 1rem;
+    border-radius: 4rem;
+  }
+
+  .timer-container {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  #timer {
+    font-size: 5rem;
+  }
+
+  #mode {
+    font-size: 1.5rem;
+  }
+
+  .button-container button {
+    font-size: 1rem;
+  }
+
+  .button-container i {
+    font-size: 2.5rem;
+  }
+}
+
+/* Responsive Styles for devices with max-width 426px */
+@media (max-width: 426px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 4rem 1rem;
+  }
+
+  .blurCircle-1,.blurCircle-2{
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .container {
+    width: 90%;
+    top: 50%;
+    padding: 0.5rem;
+    border-radius: 4rem;
+  }
+
+  .timer-container {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  #timer {
+    font-size: 4rem;
+  }
+
+  #mode {
+    font-size: 1.3rem;
+  }
+
+  .button-container button {
+    font-size: 0.9rem;
+  }
+
+  .button-container i {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive Styles for devices with max-width 376px */
+@media (max-width: 376px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 3.5rem 0.5rem;
+  }
+
+  .blurCircle-1,.blurCircle-2{
+    width: 9rem;
+    height: 9rem;
+  }
+  .container {
+    width: 95%;
+    top: 50%;
+    padding: 0.5rem;
+    border-radius: 4rem;
+  }
+
+  .timer-container {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  #timer {
+    font-size: 3.5rem;
+  }
+
+  #mode {
+    font-size: 1.2rem;
+  }
+
+  .button-container button {
+    font-size: 0.8rem;
+  }
+
+  .button-container i {
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsive Styles for devices with max-width 320px */
+@media (max-width: 320px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  section {
+    padding: 3rem 0.5rem;
+  }
+
+  .blurCircle-1,.blurCircle-2{
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .container {
+    width: 95%;
+    top: 50%;
+    padding: 0.5rem;
+    border-radius: 4rem;
+  }
+
+  .timer-container {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  #timer {
+    font-size: 3rem;
+  }
+
+  #mode {
+    font-size: 1rem;
+  }
+
+  .button-container button {
+    font-size: 0.7rem;
+  }
+
+  .button-container i {
+    font-size: 1.6rem;
+  }
+}
