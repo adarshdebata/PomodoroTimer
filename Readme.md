@@ -11,6 +11,7 @@ The Pomodoro Timer is a productivity tool that helps you manage your time effect
 - Responsive design for seamless use across devices
 - Notification sound when timer reaches the last 3 seconds
 - Browser tab title updated with the remaining time
+- Responsive design for seamless use across devices
 
 ## How to Use
 1. Clone the repository to your local machine.
@@ -25,6 +26,14 @@ The Pomodoro Timer is a productivity tool that helps you manage your time effect
 - HTML5
 - CSS3
 - JavaScript
+
+## Responsive Design
+The Pomodoro Timer is designed to be responsive and works well on various devices. The layout adjusts appropriately for different screen sizes:
+- **1024px and below:** Adjustments for tablets and medium-sized screens.
+- **768px and below:** Adjustments for small tablets and large smartphones.
+- **425px and below:** Adjustments for most smartphones.
+- **375px and below:** Further adjustments for smaller smartphones.
+- **320px and below:** Optimized for the smallest smartphone screens.
 
 ## Preview
 ![Pomodoro Timer Preview](preview/preview.png)
